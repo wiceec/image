@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrow-white" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fff"/>
+    </marker>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a237e"/>
+      <stop offset="100%" stop-color="#0277bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="720" rx="12" fill="#f5f7fa"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1100" height="56" rx="12" fill="url(#headerGrad)"/>
+  <rect x="0" y="30" width="1100" height="26" fill="url(#headerGrad)"/>
+  <text x="550" y="37" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">NPI (New Product Introduction) 架構流程圖</text>
+
+  <!-- ========== NPI Timeline ========== -->
+  <text x="50" y="95" fill="#1a237e" font-size="15" font-weight="bold">NPI 階段</text>
+
+  <!-- Timeline arrow -->
+  <line x1="50" y1="120" x2="1050" y2="120" stroke="#90a4ae" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- POR -->
+  <rect x="70" y="102" width="100" height="36" rx="18" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="120" y="125" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="bold">POR</text>
+
+  <!-- EVT -->
+  <rect x="260" y="102" width="100" height="36" rx="18" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310" y="125" text-anchor="middle" fill="#0d47a1" font-size="13" font-weight="bold">EVT</text>
+
+  <!-- DVT -->
+  <rect x="460" y="102" width="100" height="36" rx="18" fill="#e0f7fa" stroke="#00838f" stroke-width="2" filter="url(#shadow)"/>
+  <text x="510" y="125" text-anchor="middle" fill="#006064" font-size="13" font-weight="bold">DVT</text>
+
+  <!-- PVT -->
+  <rect x="660" y="102" width="100" height="36" rx="18" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="710" y="125" text-anchor="middle" fill="#1b5e20" font-size="13" font-weight="bold">PVT</text>
+
+  <!-- MP -->
+  <rect x="860" y="102" width="100" height="36" rx="18" fill="#fff3e0" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+  <text x="910" y="125" text-anchor="middle" fill="#bf360c" font-size="13" font-weight="bold">MP</text>
+
+  <!-- ========== Roles Row ========== -->
+  <text x="50" y="175" fill="#1a237e" font-size="15" font-weight="bold">角色分工</text>
+
+  <!-- PM -->
+  <rect x="70" y="190" width="150" height="50" rx="8" fill="#5c6bc0" filter="url(#shadow)"/>
+  <text x="145" y="212" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">📋 PM</text>
+  <text x="145" y="228" text-anchor="middle" fill="#c5cae9" font-size="10">定義 POR / 規劃需求</text>
+
+  <!-- RD -->
+  <rect x="300" y="190" width="280" height="50" rx="8" fill="#0288d1" filter="url(#shadow)"/>
+  <text x="440" y="212" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">🔧 RD (研發)</text>
+  <text x="440" y="228" text-anchor="middle" fill="#b3e5fc" font-size="10">HW 開發 / BSP 建構 / SW 整合</text>
+
+  <!-- DQA -->
+  <rect x="660" y="190" width="200" height="50" rx="8" fill="#2e7d32" filter="url(#shadow)"/>
+  <text x="760" y="212" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">✅ DQA</text>
+  <text x="760" y="228" text-anchor="middle" fill="#c8e6c9" font-size="10">設計品質驗證 / 測試</text>
+
+  <!-- Factory -->
+  <rect x="920" y="190" width="130" height="50" rx="8" fill="#e65100" filter="url(#shadow)"/>
+  <text x="985" y="212" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">🏭 工廠</text>
+  <text x="985" y="228" text-anchor="middle" fill="#ffe0b2" font-size="10">207 量產流程</text>
+
+  <!-- ========== Core Architecture ========== -->
+  <text x="50" y="290" fill="#1a237e" font-size="15" font-weight="bold">核心架構</text>
+
+  <!-- Clean BSP Box -->
+  <rect x="70" y="305" width="220" height="160" rx="10" fill="#fff" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="70" y="305" width="220" height="32" rx="10" fill="#1565c0"/>
+  <rect x="70" y="325" width="220" height="12" fill="#1565c0"/>
+  <text x="180" y="326" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">🖥️ Clean BSP</text>
+  <text x="180" y="360" text-anchor="middle" fill="#333" font-size="11">OS (Linux / Windows)</text>
+  <text x="180" y="380" text-anchor="middle" fill="#333" font-size="11">HW Drivers</text>
+  <text x="180" y="400" text-anchor="middle" fill="#333" font-size="11">Bootloader</text>
+  <text x="180" y="420" text-anchor="middle" fill="#333" font-size="11">Kernel Config</text>
+  <text x="180" y="448" text-anchor="middle" fill="#999" font-size="9">用於 EVT / DVT 硬體驗證</text>
+
+  <!-- Arrow: Clean BSP → OSBuilder -->
+  <line x1="290" y1="385" x2="370" y2="385" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- OSBuilder Box -->
+  <rect x="380" y="315" width="200" height="140" rx="10" fill="#fff" stroke="#6a1b9a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="380" y="315" width="200" height="32" rx="10" fill="#6a1b9a"/>
+  <rect x="380" y="335" width="200" height="12" fill="#6a1b9a"/>
+  <text x="480" y="336" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">⚙️ OSBuilder</text>
+  <text x="480" y="370" text-anchor="middle" fill="#333" font-size="11">自動化打包工具</text>
+  <line x1="400" y1="385" x2="560" y2="385" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="480" y="405" text-anchor="middle" fill="#555" font-size="10">整合 SW Services</text>
+  <text x="480" y="425" text-anchor="middle" fill="#555" font-size="10">進 Clean BSP</text>
+  <text x="480" y="445" text-anchor="middle" fill="#555" font-size="10">產出完整 IMAGE</text>
+
+  <!-- SUSI Box (input to OSBuilder) -->
+  <rect x="400" y="480" width="160" height="55" rx="8" fill="#f3e5f5" stroke="#8e24aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="480" y="502" text-anchor="middle" fill="#6a1b9a" font-size="12" font-weight="bold">📦 SUSI</text>
+  <text x="480" y="520" text-anchor="middle" fill="#777" font-size="9">HW 監控 / Watchdog / GPIO API</text>
+
+  <!-- Arrow: SUSI → OSBuilder -->
+  <line x1="480" y1="480" x2="480" y2="460" stroke="#8e24aa" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+
+  <!-- Arrow: OSBuilder → Final IMAGE -->
+  <line x1="580" y1="385" x2="660" y2="385" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Final IMAGE Box -->
+  <rect x="670" y="305" width="220" height="160" rx="10" fill="#fff" stroke="#2e7d32" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="670" y="305" width="220" height="32" rx="10" fill="#2e7d32"/>
+  <rect x="670" y="325" width="220" height="12" fill="#2e7d32"/>
+  <text x="780" y="326" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">💿 Final IMAGE</text>
+  <text x="780" y="360" text-anchor="middle" fill="#333" font-size="11">Clean BSP</text>
+  <text x="780" y="378" text-anchor="middle" fill="#333" font-size="11">＋</text>
+  <text x="780" y="396" text-anchor="middle" fill="#333" font-size="11">Bundle SW Services</text>
+  <text x="780" y="414" text-anchor="middle" fill="#333" font-size="11">(SUSI, etc.)</text>
+  <text x="780" y="448" text-anchor="middle" fill="#999" font-size="9">用於 DQA 測試 → PVT → MP</text>
+
+  <!-- Arrow: Final IMAGE → Factory -->
+  <line x1="890" y1="385" x2="960" y2="385" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Factory / MP -->
+  <rect x="970" y="335" width="100" height="100" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1020" y="375" text-anchor="middle" fill="#e65100" font-size="28">🏭</text>
+  <text x="1020" y="398" text-anchor="middle" fill="#bf360c" font-size="12" font-weight="bold">MP</text>
+  <text x="1020" y="415" text-anchor="middle" fill="#999" font-size="9">207 流程</text>
+
+  <!-- ========== OTA Section ========== -->
+  <text x="50" y="575" fill="#1a237e" font-size="15" font-weight="bold">遠端更新</text>
+
+  <rect x="70" y="590" width="980" height="70" rx="10" fill="#e3f2fd" stroke="#0277bd" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#shadow)"/>
+
+  <text x="180" y="620" text-anchor="middle" fill="#01579b" font-size="13" font-weight="bold">📡 OTA (Over-The-Air Update)</text>
+  <text x="180" y="642" text-anchor="middle" fill="#555" font-size="10">遠端無線韌體/軟體升級</text>
+
+  <!-- OTA arrow from Final IMAGE -->
+  <line x1="780" y1="465" x2="780" y2="585" stroke="#0277bd" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="795" y="530" fill="#0277bd" font-size="9">部署更新</text>
+
+  <!-- OTA flow -->
+  <rect x="370" y="600" width="130" height="40" rx="6" fill="#fff" stroke="#0277bd" stroke-width="1"/>
+  <text x="435" y="625" text-anchor="middle" fill="#01579b" font-size="10">雲端 Server</text>
+
+  <line x1="500" y1="620" x2="560" y2="620" stroke="#0277bd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="570" y="600" width="130" height="40" rx="6" fill="#fff" stroke="#0277bd" stroke-width="1"/>
+  <text x="635" y="625" text-anchor="middle" fill="#01579b" font-size="10">網路傳輸</text>
+
+  <line x1="700" y1="620" x2="760" y2="620" stroke="#0277bd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="770" y="600" width="160" height="40" rx="6" fill="#fff" stroke="#0277bd" stroke-width="1"/>
+  <text x="850" y="625" text-anchor="middle" fill="#01579b" font-size="10">🖥️ 設備端更新 IMAGE</text>
+
+  <!-- ========== Legend ========== -->
+  <rect x="50" y="680" width="1000" height="28" rx="6" fill="#eceff1"/>
+  <text x="70" y="699" fill="#555" font-size="10">
+    POR: Plan of Record | EVT: Engineering Validation | DVT: Design Validation | PVT: Production Validation | MP: Mass Production | BSP: Board Support Package | SUSI: Secured Unified Smart Interface | OTA: Over-The-Air
+  </text>
+
+</svg>
