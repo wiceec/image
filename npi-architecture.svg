@@ -70,7 +70,7 @@
   <!-- Factory -->
   <rect x="920" y="190" width="130" height="50" rx="8" fill="#e65100" filter="url(#shadow)"/>
   <text x="985" y="212" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">🏭 工廠</text>
-  <text x="985" y="228" text-anchor="middle" fill="#ffe0b2" font-size="10">207 量產流程</text>
+  <text x="985" y="228" text-anchor="middle" fill="#ffe0b2" font-size="10">量產製造</text>
 
   <!-- ========== Core Architecture ========== -->
   <text x="50" y="290" fill="#1a237e" font-size="15" font-weight="bold">核心架構</text>
@@ -97,7 +97,7 @@
   <text x="480" y="370" text-anchor="middle" fill="#333" font-size="11">自動化打包工具</text>
   <line x1="400" y1="385" x2="560" y2="385" stroke="#e0e0e0" stroke-width="1"/>
   <text x="480" y="405" text-anchor="middle" fill="#555" font-size="10">整合 SW Services</text>
-  <text x="480" y="425" text-anchor="middle" fill="#555" font-size="10">進 Clean BSP</text>
+  <text x="480" y="425" text-anchor="middle" fill="#555" font-size="10">整合進 Clean BSP</text>
   <text x="480" y="445" text-anchor="middle" fill="#555" font-size="10">產出完整 IMAGE</text>
 
   <!-- SUSI Box (input to OSBuilder) -->
@@ -129,7 +129,7 @@
   <rect x="970" y="335" width="100" height="100" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
   <text x="1020" y="375" text-anchor="middle" fill="#e65100" font-size="28">🏭</text>
   <text x="1020" y="398" text-anchor="middle" fill="#bf360c" font-size="12" font-weight="bold">MP</text>
-  <text x="1020" y="415" text-anchor="middle" fill="#999" font-size="9">207 流程</text>
+  <text x="1020" y="415" text-anchor="middle" fill="#999" font-size="9">量產工單</text>
 
   <!-- ========== OTA Section ========== -->
   <text x="50" y="575" fill="#1a237e" font-size="15" font-weight="bold">遠端更新</text>
